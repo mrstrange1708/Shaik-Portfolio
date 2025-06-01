@@ -6,7 +6,7 @@ export default function ClientHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-[999] flex items-center py-6 px-8 backdrop-blur-sm bg-black/5 text-white font-medium relative">
+      <header className="sticky top-0 z-[999] flex items-center py-6 px-8 backdrop-blur-sm bg-black/5 text-white font-medium">
         <Link href='/' className="text-2xl font-light transition-all duration-200 hover:font-semibold cursor-pointer">
           SHAIK
         </Link>

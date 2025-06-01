@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
-
+import Image from "next/image";
 export default function Card({ title, subtitle, imgSrc, techStack, url }) {
   const [transformStyle, setTransformStyle] = useState("");
 
@@ -44,7 +44,7 @@ export default function Card({ title, subtitle, imgSrc, techStack, url }) {
     >
       <div className="flex flex-col h-full">
         {imgSrc && (
-          <img
+          <Image
             src={imgSrc}
             alt={title}
             className="w-full h-80 object-cover"

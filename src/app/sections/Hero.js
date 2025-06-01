@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -36,7 +37,7 @@ const Hero = () => {
           transition: "all 0.5s ease-in-out",
         }}
       >
-        <img
+        <Image
           src="/assets/Main_img.jpg"
           alt="Hero Visual"
           className="w-full h-full object-cover"

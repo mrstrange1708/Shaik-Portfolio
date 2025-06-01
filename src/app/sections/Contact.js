@@ -3,6 +3,7 @@ import React from "react";
 import { Mail, Phone } from "lucide-react";
 import { SiGithub, SiLeetcode, SiLinkedin } from "react-icons/si";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-black text-white py-16 px-8 mt-18">
@@ -63,9 +64,9 @@ const Footer = () => {
         <div>
           <ul className="space-y-10 ml-30 font-normal text-lg ">
             <li>
-              <a href="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="hover:underline">

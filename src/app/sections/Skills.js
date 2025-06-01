@@ -58,7 +58,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   );
 }
 
-const skills = () => {
+const Skills = () => {
   useEffect(() => {
     const smoothScrollHandler = (e) => {
       const anchor = e.target.closest("a");
@@ -99,4 +99,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;
