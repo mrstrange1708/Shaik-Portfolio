@@ -37,10 +37,12 @@ const Hero = () => {
           transition: "all 0.5s ease-in-out",
         }}
       >
-        <img
-          src="/assets/Main_img.jpg"
+        <Image
+          src="/Assets/Main_img.jpg"
           alt="Hero Visual"
           className="w-full h-full object-cover"
+          fill
+          priority
         />
       </div>
 
