@@ -44,7 +44,7 @@ export default function Card({ title, subtitle, imgSrc, techStack, url }) {
     >
       <div className="flex flex-col h-full">
         {imgSrc && (
-          <Image
+          <img
             src={imgSrc}
             alt={title}
             className="w-full h-80 object-cover"

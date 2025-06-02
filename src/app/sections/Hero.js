@@ -37,7 +37,7 @@ const Hero = () => {
           transition: "all 0.5s ease-in-out",
         }}
       >
-        <Image
+        <img
           src="/assets/Main_img.jpg"
           alt="Hero Visual"
           className="w-full h-full object-cover"
