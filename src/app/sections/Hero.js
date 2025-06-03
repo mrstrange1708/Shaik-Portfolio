@@ -13,18 +13,19 @@ const Hero = () => {
     offset: ["start end", "end start"],
   });
 
-  const position = useTransform(scrollYProgress, [0, 0.9,0.91],["fixed", "fixed", "sticky"]);
+  const position = useTransform(scrollYProgress, [0, 0.80, 0.81], ["fixed", "fixed", "relative"]);
   const width = useTransform(scrollYProgress, [0, 0.9], ["130%", "30%"]);
-  const x = useTransform(scrollYProgress, [0,0.35, 0.9], [0,"10%", "-120%"]);
+  const x = useTransform(scrollYProgress, [0,0.5], [0, '-50%']);
 
 
 
   return (
-    <section ref={targetref}  className="relative h-[300vh] bg-black text-white overflow-hidden">
-      <motion.div style={{position}}  className=" top-0 left-0 w-full h-screen z-10 pointer-events-none">
+    <motion.section ref={targetref}  className="relative min-h-[400vh] bg-black text-white overflow-hidden">
+      <div className="relative z-0 h-[300vh]"></div>
+      <motion.div   className="top-0 left-0 w-full h-screen z-10 pointer-events-none" style={{ position }}>
         <motion.div
           className="absolute top-0 right-0 w-full h-screen z-0"
-          style={{ width  }}
+          style={{ width ,x }}
           
         >
           <Image
@@ -57,8 +58,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      <div className="relative z-0 h-[300vh]"></div>
-    </section>
+    </motion.section>
   );
 };
 
