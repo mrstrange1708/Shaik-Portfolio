@@ -14,7 +14,7 @@ const Hero = () => {
   });
 
   const position = useTransform(scrollYProgress, [0, 0.80, 0.81], ["fixed", "fixed", "relative"]);
-  const width = useTransform(scrollYProgress, [0, 0.9], ["130%", "30%"]);
+  const width = useTransform(scrollYProgress, [0, 0.8], ["130%", "30%"]);
   const x = useTransform(scrollYProgress, [0,0.5], [0, '-50%']);
 
 
