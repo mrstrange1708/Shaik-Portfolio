@@ -37,7 +37,7 @@ export default function Project() {
         " MongoDB",
         "Tailwind CSS",
       ],
-      url: "https://junaidsamishaik.wixsite.com/stylishlady",
+      url: "https://stylish-lady-collection.vercel.app/",
     },
     {
       title: "Project Management System",
