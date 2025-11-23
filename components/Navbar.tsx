@@ -1,160 +1,77 @@
 'use client';
-import { cn } from '@/lib/utils';
-import { useState } from 'react';
-import { MoveUpRight } from 'lucide-react';
-import { useRouter } from 'next/navigation';
-import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import React, { useState, useRef } from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
-const COLORS = [
-    'bg-yellow-500 text-black',
-    'bg-blue-500 text-white',
-    'bg-teal-500 text-black',
-    'bg-indigo-500 text-white',
-];
+gsap.registerPlugin(useGSAP);
 
-const MENU_LINKS = [
-    {
-        name: 'Home',
-        url: '/',
-    },
-    {
-        name: 'About Me',
-        url: '/#about-me',
-    },
-    {
-        name: 'Experience',
-        url: '/#my-experience',
-    },
-    {
-        name: 'Projects',
-        url: '/#selected-projects',
-    },
-];
+export default function ClientHeader() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const headerRef = useRef<HTMLElement>(null);
 
-const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const router = useRouter();
+    useGSAP(() => {
+        gsap.set(headerRef.current, { autoAlpha: 0 });
+        gsap.to(headerRef.current, {
+            autoAlpha: 1,
+            delay: 2.5,
+            duration: 0.5,
+        });
+    });
 
     return (
         <>
-            <div className="sticky top-0 z-[4]">
-                <button
-                    className={cn(
-                        'group size-12 absolute top-5 right-5 md:right-10 z-[2]',
-                    )}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                    <span
-                        className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px] ',
-                            {
-                                'rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:rotate-12': !isMenuOpen,
-                            },
-                        )}
-                    ></span>
-                    <span
-                        className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px] ',
-                            {
-                                '-rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:-rotate-12': !isMenuOpen,
-                            },
-                        )}
-                    ></span>
-                </button>
-            </div>
-
-            <div
-                className={cn(
-                    'overlay fixed inset-0 z-[2] bg-black/70 transition-all duration-150',
-                    {
-                        'opacity-0 invisible pointer-events-none': !isMenuOpen,
-                    },
-                )}
-                onClick={() => setIsMenuOpen(false)}
-            ></div>
-
-            <div
-                className={cn(
-                    'fixed top-0 right-0 h-[100dvh] w-[500px] max-w-[calc(100vw-3rem)] transform translate-x-full transition-transform duration-700 z-[3] overflow-hidden gap-y-14',
-                    'flex flex-col lg:justify-center py-10',
-                    { 'translate-x-0': isMenuOpen },
-                )}
+            <header
+                ref={headerRef}
+                className="fixed top-4 left-1/2 -translate-x-1/2 z-[999] flex items-center justify-between py-3 px-6 backdrop-blur-md bg-white/5 border border-white/10 rounded-full w-[90%] max-w-5xl text-white shadow-lg"
             >
-                <div
-                    className={cn(
-                        'fixed inset-0 scale-150 translate-x-1/2 rounded-[50%] bg-background-light duration-700 delay-150 z-[-1]',
-                        {
-                            'translate-x-0': isMenuOpen,
-                        },
-                    )}
-                ></div>
+                <Link href='/' className="text-xl font-bold tracking-wider hover:text-[var(--neon-green)] transition-colors duration-300 !cursor-pointer">
+                    SHAIK
+                </Link>
 
-                <div className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto">
-                    <div className="flex gap-10 lg:justify-between max-lg:flex-col w-full">
-                        <div className="max-lg:order-2">
-                            <p className="text-muted-foreground mb-5 md:mb-8">
-                                SOCIAL
-                            </p>
-                            <ul className="space-y-3">
-                                {SOCIAL_LINKS.map((link) => (
-                                    <li key={link.name}>
-                                        <a
-                                            href={link.url}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-lg capitalize hover:underline"
-                                        >
-                                            {link.name}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="">
-                            <p className="text-muted-foreground mb-5 md:mb-8">
-                                MENU
-                            </p>
-                            <ul className="space-y-3">
-                                {MENU_LINKS.map((link, idx) => (
-                                    <li key={link.name}>
-                                        <button
-                                            onClick={() => {
-                                                router.push(link.url);
-                                                setIsMenuOpen(false);
-                                            }}
-                                            className="group text-xl flex items-center gap-3"
-                                        >
-                                            <span
-                                                className={cn(
-                                                    'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
-                                                    COLORS[idx],
-                                                )}
-                                            >
-                                                <MoveUpRight
-                                                    size={8}
-                                                    className="scale-0 group-hover:scale-100 transition-all"
-                                                />
-                                            </span>
-                                            {link.name}
-                                        </button>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
+                    {['About', 'Projects', 'Skills', 'Timeline', 'Contact'].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className="relative group hover:text-[var(--neon-green)] transition-colors duration-300 !cursor-pointer"
+                        >
+                            {item}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--neon-green)] transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    ))}
+                </nav>
 
-                <div className="w-full max-w-[300px] mx-8 sm:mx-auto">
-                    <p className="text-muted-foreground mb-4">GET IN TOUCH</p>
-                    <a href={`mailto:${GENERAL_INFO.email}`}>
-                        {GENERAL_INFO.email}
+                <div className="hidden md:block">
+                    <a href="#contact" className="px-5 py-2 text-sm font-bold text-black bg-[var(--neon-green)] rounded-full hover:bg-white transition-colors duration-300 !cursor-pointer">
+                        HIRE ME
                     </a>
                 </div>
-            </div>
+
+                <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="md:hidden text-white hover:text-[var(--neon-green)] transition-colors !cursor-pointer"
+                    aria-label="Toggle menu"
+                >
+                    {menuOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+            </header>
+
+            {menuOpen && (
+                <nav className="fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl flex flex-col gap-4 backdrop-blur-md bg-black/80 border border-white/10 rounded-2xl p-6 md:hidden text-center z-[998]">
+                    {['About', 'Projects', 'Skills', 'Timeline', 'Contact'].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className="text-lg font-medium hover:text-[var(--neon-green)] transition-colors duration-300 !cursor-pointer"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            {item}
+                        </a>
+                    ))}
+                </nav>
+            )}
         </>
     );
-};
-
-export default Navbar;
+}
