@@ -31,7 +31,7 @@ export default function ClientHeader() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
-                    {['About', 'Projects', 'Skills', 'Timeline', 'Contact'].map((item) => (
+                    {['About', 'Skills', 'Experience', 'Projects', 'Timeline', 'Contact'].map((item) => (
                         <a
                             key={item}
                             href={`#${item.toLowerCase()}`}

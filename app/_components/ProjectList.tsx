@@ -104,7 +104,7 @@ const ProjectList = () => {
     };
 
     return (
-        <section className="pb-section" id="selected-projects">
+        <section className="pb-section" id="projects">
             <div className="container">
                 <SectionTitle title="SELECTED PROJECTS" />
 
@@ -139,7 +139,7 @@ const ProjectList = () => {
                         className="flex flex-col max-md:gap-10"
                         ref={projectListRef}
                     >
-                        {PROJECTS.map((project, index) => (
+                        {PROJECTS.slice(0, 4).map((project, index) => (
                             <Project
                                 index={index}
                                 project={project}
@@ -148,6 +148,16 @@ const ProjectList = () => {
                                 key={project.slug}
                             />
                         ))}
+                    </div>
+
+                    <div className="mt-12 pt-8 border-t border-border/30">
+                        <a
+                            href="/projects"
+                            className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-2 group"
+                        >
+                            <span>View more</span>
+                            <span className="group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
                     </div>
                 </div>
             </div>
