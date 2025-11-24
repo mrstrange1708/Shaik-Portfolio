@@ -12,6 +12,7 @@ export const GENERAL_INFO = {
 export const SOCIAL_LINKS = [
   { name: 'github', url: 'https://github.com/mrstrange1708/' },
   { name: 'linkedin', url: 'https://www.linkedin.com/in/shaik-mohammed-junaid-sami-20885430b/' },
+  { name: "leetcode", url: "https://leetcode.com/junaidsamishaik/" }
 ];
 
 export const MY_STACK = {
@@ -110,12 +111,13 @@ export const PROJECTS: IProject[] = [
     slug: 'novelverse',
     liveUrl: 'https://novel-verse-ten.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/NovelVerse',
-    year: 2024,
+    year: 2025,
     thumbnail: '/Assets/Novelverse.png',
     longThumbnail: '/Assets/Novelverse.png',
     images: ['/Assets/Novelverse.png'],
     techStack: [
       'Next.js',
+      "TypeScript",
       'Node.js',
       'Express.js',
       'MySQL',
@@ -125,7 +127,7 @@ export const PROJECTS: IProject[] = [
       'Vercel',
     ],
     description: `
-      Novelverse is an online open-library platform designed to offer seamless browsing, reading, and management of digital books. <br/><br/>
+      Novelverse is a full-stack digital library platform that allows users to explore, search, and read books online. I designed the application to make browsing large book collections smooth and intuitive, with category filters, pagination, and a responsive reading experience across all devices. The project focuses on delivering fast load times, clean UI, and a stable backend to handle different book operations. <br/><br/>
       Key Features:<br/>
       <ul>
         <li>📚 Extensive Book Library with category-based filtering</li>
@@ -138,8 +140,8 @@ export const PROJECTS: IProject[] = [
       <ul>
         <li>Designed scalable MySQL schema for book management</li>
         <li>Implemented API routing with robust error handling</li>
-        <li>Dockerized backend environment for easy deployment</li>
         <li>Optimized UI with Tailwind and reusable components</li>
+        <li>Responsive layout for desktop and mobile reading</li>
       </ul>
     `,
     role: `
@@ -147,20 +149,20 @@ export const PROJECTS: IProject[] = [
       <ul>
         <li>⚙️ Built backend APIs using Express.js & MySQL</li>
         <li>🎨 Created all frontend pages in Next.js and Tailwind CSS</li>
-        <li>🚀 Deployed and optimized using Vercel and Docker</li>
+        <li>🚀Managed deployment, environment setup, and optimizations using Vercel and Docker</li>
       </ul>
     `,
   },
   {
-    title: 'MERN Stack E-commerce',
+    title: 'Stylish Lady Collection',
     slug: 'stylish-lady-collection',
     liveUrl: 'https://stylish-lady-collection.vercel.app/',
-    sourceCode: 'https://github.com/mrstrange1708/Stylish-Lady-Collection',
-    year: 2024,
-    thumbnail: '/Assets/Stylish.jpg',
-    longThumbnail: '/Assets/Stylish.jpg',
-    images: ['/Assets/Stylish.jpg'],
-    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    sourceCode: 'https://github.com/mrstrange1708/Stylish_Lady',
+    year: 2025,
+    thumbnail: '/Assets/Stylish.png',
+    longThumbnail: '/Assets/Stylish.png',
+    images: ['/Assets/Stylish.png'],
+    techStack: ['Next.js', 'TypeScript', 'Supabase', "Razorpay", 'Tailwind CSS', 'Git', "Vercel"],
     description: `
       A complete MERN stack e-commerce website built for a clothing brand. Designed with a modern UI, smooth shopping flow, and full product management. <br/><br/>
       Key Features:<br/>
@@ -172,16 +174,16 @@ export const PROJECTS: IProject[] = [
       </ul><br/>
       Technical Highlights:
       <ul>
-        <li>Custom MongoDB models for products & carts</li>
-        <li>Efficient API architecture using Express.js</li>
         <li>Reusable component architecture in React</li>
+        <li>JWT Authentication and protected API routes</li>
+        <li>Real-time product updates via Supabase</li>
+        <li>Payment integration with Razorpay</li>
       </ul>
     `,
     role: `
       Full Stack Developer<br/>
       <ul>
         <li>🖥️ Built frontend UI in React & Tailwind</li>
-        <li>🔐 Developed backend APIs with Express & MongoDB</li>
         <li>🚀 Deployed on Vercel</li>
       </ul>
     `,
@@ -190,17 +192,18 @@ export const PROJECTS: IProject[] = [
     title: 'Finance Flow',
     slug: 'finance-flow',
     liveUrl: 'https://fin.oidelta.com/',
+    sourceCode: 'https://github.com/mrstrange1708/FinanceFlow',
     year: 2024,
     thumbnail: '/Assets/Financeflow.png',
     longThumbnail: '/Assets/Financeflow.png',
     images: ['/Assets/Financeflow.png'],
     techStack: [
       'Next.js',
-      'Node.js',
-      'Express.js',
-      'MySQL',
+      "Supabase",
+      "Google OAuth",
+      "JWT",
+      "Chart.js",
       'Tailwind CSS',
-      'Docker',
       'Git',
       'Vercel',
     ],
@@ -210,22 +213,21 @@ export const PROJECTS: IProject[] = [
       <ul>
         <li>💸 Income & Expense Tracking with charts</li>
         <li>📊 Category-wise analytics for better insights</li>
-        <li>🕒 Real-time data sync via MySQL backend</li>
-        <li>📱 Fully responsive UI</li>
+        <li>📱 Fully responsive UI for mobile screens</li>
       </ul><br/>
       Technical Highlights:
       <ul>
-        <li>Built REST APIs with Node.js & Express</li>
-        <li>MySQL schema optimized for analytics</li>
+        <li>JWT Authentication and protected API routes</li>
         <li>Clean component-driven UI in Next.js</li>
+        <li>Real-time data sync via Supabase</li>
       </ul>
     `,
     role: `
       Full Stack Developer<br/>
       <ul>
-        <li>⚙️ Developed backend APIs & MySQL queries</li>
+        <li>⚙️ Developed backend APIs & Supabase queries</li>
         <li>🎨 Designed user dashboard in Next.js</li>
-        <li>☁️ Managed deployment with Docker & Vercel</li>
+        <li>☁️ Managed deployment with Vercel</li>
       </ul>
     `,
   },
@@ -233,11 +235,12 @@ export const PROJECTS: IProject[] = [
     title: 'Task Flow',
     slug: 'task-flow',
     liveUrl: 'https://project-management-caps.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/Project-Management_Caps',
     year: 2024,
     thumbnail: '/Assets/Taskflow.jpg',
     longThumbnail: '/Assets/Taskflow.jpg',
     images: ['/Assets/Taskflow.jpg'],
-    techStack: ['React.js', 'API', 'Framer Motion', 'Tailwind CSS'],
+    techStack: ['React.js', 'Node.js', "Express.js", "MongoDB", "Google OAuth", "JWT", 'Tailwind CSS', 'Git', 'Vercel'],
     description: `
       A project management system where users can create, assign, and track tasks with an intuitive dashboard and smooth animations. <br/><br/>
       Key Features:<br/>
@@ -246,6 +249,12 @@ export const PROJECTS: IProject[] = [
         <li>📅 Deadline & priority management</li>
         <li>🎞️ Framer Motion animations</li>
         <li>📱 Fully responsive interface</li>
+      </ul>
+      Technical Highlights:
+      <ul>
+        <li>JWT Authentication and protected API routes</li>
+        <li>Clean component-driven UI in React</li>
+        <li>Real-time data sync via MongoDB</li>
       </ul>
     `,
     role: `
@@ -261,6 +270,7 @@ export const PROJECTS: IProject[] = [
     title: 'Fintech Learning',
     slug: 'fintech-learning',
     liveUrl: 'https://fin-tech-learning.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/FinTech-Learning',
     year: 2024,
     thumbnail: '/Assets/Fintech.jpg',
     longThumbnail: '/Assets/Fintech.jpg',
@@ -288,11 +298,12 @@ export const PROJECTS: IProject[] = [
     title: 'Cognify',
     slug: 'cognify',
     liveUrl: 'https://cognify-lemon.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/Mind_Map_Builder',
     year: 2024,
     thumbnail: '/Assets/Cognify.jpg',
     longThumbnail: '/Assets/Cognify.jpg',
     images: ['/Assets/Cognify.jpg'],
-    techStack: ['React-flow', 'React.js', 'Framer Motion', 'Tailwind CSS'],
+    techStack: ['React-flow', 'React.js', 'Framer Motion', 'Tailwind CSS', "Firebase", 'Git', 'Vercel'],
     description: `
       Cognify is an interactive mind-map builder that helps users organize thoughts visually using draggable nodes and connectors. <br/><br/>
       Key Features:<br/>
@@ -301,6 +312,12 @@ export const PROJECTS: IProject[] = [
         <li>🔗 Drag & connect logic using React-Flow</li>
         <li>🎞️ Smooth animations with Framer Motion</li>
         <li>📱 Responsive design for all devices</li>
+      </ul>
+      Technical Highlights:
+      <ul>
+        <li>JWT Authentication and protected API routes</li>
+        <li>Clean component-driven UI in React</li>
+        <li>Real-time data sync via MongoDB</li>
       </ul>
     `,
     role: `
@@ -313,16 +330,58 @@ export const PROJECTS: IProject[] = [
     `,
   },
   {
+    title: 'E-commerce',
+    slug: 'ecommerce',
+    liveUrl: 'https://mrstrange1708.github.io/E-commerce/',
+    sourceCode: 'https://github.com/mrstrange1708/E-commerce',
+    year: 2023,
+    thumbnail: '/Assets/E-commerce.png',
+    longThumbnail: '/Assets/E-commerce.png',
+    images: ['/Assets/E-commerce.png'],
+    techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
+    description: `
+      A static E-commerce website built with smooth navigation and clean structure.
+      <br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>📱 Responsive design for all devices</li>
+      </ul> 
+      Technical Highlights:
+      <ul>
+        <li>Clean component-driven UI in JavaScript</li>
+      </ul>
+    `,
+    role: `
+      Developer<br/>
+      <ul>
+        <li>🎨 Designed and built all UI screens</li>
+        <li>⚡ Implemented responsive layout</li>
+        <li>🔗 Connected lessons dynamically</li>
+      </ul>
+    `,
+  },
+  {
     title: 'Tic Tac Toe Game',
     slug: 'tic-tac-toe',
     liveUrl: 'https://tic-tac-toe-project-gamma-pink.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/Tic_Tac_Toe_Project',
     year: 2023,
     thumbnail: '/Assets/Tic-tac-toe.jpg',
     longThumbnail: '/Assets/Tic-tac-toe.jpg',
     images: ['/Assets/Tic-tac-toe.jpg'],
-    techStack: ['JavaScript', 'HTML', 'CSS'],
+    techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
     description: `
       A classic Tic Tac Toe game built with simple game logic and smooth UI interactions. Perfect for practicing core JS fundamentals.
+      <br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>Classic Tic Tac Toe game logic</li>
+        <li>📱 Responsive design for all devices</li>
+      </ul> 
+      Technical Highlights:
+      <ul>
+        <li>Clean component-driven UI in JavaScript</li>
+      </ul>
     `,
     role: `
       Developer<br/>
@@ -336,18 +395,27 @@ export const PROJECTS: IProject[] = [
     title: 'Todo List',
     slug: 'todo-list',
     liveUrl: 'https://to-do-list-jade-chi.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/To-Do-List',
     year: 2023,
     thumbnail: '/Assets/Todos.jpg',
     longThumbnail: '/Assets/Todos.jpg',
     images: ['/Assets/Todos.jpg'],
-    techStack: ['JavaScript', 'HTML', 'CSS'],
+    techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
     description: `
       A clean and minimal todo list app allowing users to add, remove, and track tasks easily.
+      <br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>📱 Responsive design for all devices</li>
+      </ul> 
+      Technical Highlights:
+      <ul>
+        <li>Clean component-driven UI in JavaScript</li>
+      </ul>
     `,
     role: `
       Developer<br/>
       <ul>
-        <li>📝 Built full CRUD operations</li>
         <li>🎨 Designed simple & responsive UI</li>
       </ul>
     `,
@@ -363,6 +431,15 @@ export const PROJECTS: IProject[] = [
     techStack: ['JavaScript', 'HTML', 'CSS'],
     description: `
       A static portfolio-style website built with smooth navigation and clean structure.
+      <br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>📱 Responsive design for all devices</li>
+      </ul> 
+      Technical Highlights:
+      <ul>
+        <li>Clean component-driven UI in JavaScript</li>
+      </ul>
     `,
     role: `
       Developer<br/>
@@ -383,6 +460,15 @@ export const PROJECTS: IProject[] = [
     techStack: ['JavaScript', 'HTML', 'CSS'],
     description: `
       A static final-year project featuring structured pages, responsive layout, and clear UI design.
+      <br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>📱 Responsive design for all devices</li>
+      </ul> 
+      Technical Highlights:
+      <ul>
+        <li>Clean component-driven UI in JavaScript</li>
+      </ul>
     `,
     role: `
       Developer<br/>
@@ -430,6 +516,11 @@ export const TIMELINE_DATA = [
           image: '/Assets/Financeflow.png',
           description: 'Personal expense tracker with analytics',
         },
+        {
+          name: 'MERN E-commerce',
+          image: '/Assets/Stylish.jpg',
+          description: 'Full-stack e-commerce with React and MongoDB',
+        },
       ],
     },
   },
@@ -444,11 +535,7 @@ export const TIMELINE_DATA = [
         '🎨 Created modern, responsive UIs',
       ],
       projects: [
-        {
-          name: 'MERN E-commerce',
-          image: '/Assets/Stylish.jpg',
-          description: 'Full-stack e-commerce with React and MongoDB',
-        },
+
         {
           name: 'Task Flow',
           image: '/Assets/Taskflow.jpg',
