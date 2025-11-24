@@ -30,11 +30,11 @@ export default function ProjectsPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {PROJECTS.map((project) => (
                         <div
+                            key={project.slug}
                             onClick={() => router.push(`/projects/${project.slug}`)}
                             className="cursor-pointer"
                         >
                             <CardContainer
-                                key={project.slug}
                                 className="inter-var"
                                 containerClassName="py-5"
                             >

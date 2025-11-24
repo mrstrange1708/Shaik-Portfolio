@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import {
   IconBrightnessDown,
   IconBrightnessUp,
@@ -24,13 +25,19 @@ import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 
+interface MacbookScrollProps {
+  src?: string;
+  showGradient?: boolean;
+  title?: React.ReactNode;
+  badge?: React.ReactNode;
+}
 
 export const MacbookScroll = ({
   src,
   showGradient,
   title,
   badge
-}) => {
+}: MacbookScrollProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -106,13 +113,21 @@ export const MacbookScroll = ({
   );
 };
 
+interface LidProps {
+  scaleX: any;
+  scaleY: any;
+  rotate: any;
+  translate: any;
+  src?: string;
+}
+
 export const Lid = ({
   scaleX,
   scaleY,
   rotate,
   translate,
   src
-}) => {
+}: LidProps) => {
   return (
     <div className="relative [perspective:800px]">
       <div
@@ -143,10 +158,13 @@ export const Lid = ({
         }}
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2">
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
-        <img
-          src={src}
-          alt="aceternity logo"
-          className="absolute inset-0 h-full w-full rounded-lg object-fill object-left-top" />
+        {src && (
+          <Image
+            src={src}
+            alt="aceternity logo"
+            fill
+            className="rounded-lg object-fill object-left-top" />
+        )}
       </motion.div>
     </div>
   );
@@ -505,12 +523,19 @@ export const Keypad = () => {
   );
 };
 
+interface KBtnProps {
+  className?: string;
+  children?: React.ReactNode;
+  childrenClassName?: string;
+  backlit?: boolean;
+}
+
 export const KBtn = ({
   className,
   children,
   childrenClassName,
   backlit = true
-}) => {
+}: KBtnProps) => {
   return (
     <div
       className={cn(
@@ -551,9 +576,13 @@ export const SpeakerGrid = () => {
   );
 };
 
+interface OptionKeyProps {
+  className?: string;
+}
+
 export const OptionKey = ({
   className
-}) => {
+}: OptionKeyProps) => {
   return (
     <svg
       fill="none"
