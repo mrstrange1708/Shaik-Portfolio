@@ -406,3 +406,99 @@ export const MY_EXPERIENCE = [
     duration: 'Nov 2024 - Dec 2024',
   },
 ];
+
+
+export const TIMELINE_DATA = [
+  {
+    title: '2025',
+    content: {
+      description: 'Started my journey as a React Native Frontend Developer at Apodic Software Solutions LLP',
+      highlights: [
+        '📱 Built mobile applications using React Native',
+        '⚛️ Implemented responsive UI components',
+        '🔧 Worked with modern frontend technologies',
+        '🚀 Contributed to production-ready applications',
+      ],
+      projects: [
+        {
+          name: 'Novelverse',
+          image: '/Assets/Novelverse.png',
+          description: 'Online open-library platform with Next.js and MySQL',
+        },
+        {
+          name: 'Finance Flow',
+          image: '/Assets/Financeflow.png',
+          description: 'Personal expense tracker with analytics',
+        },
+      ],
+    },
+  },
+  {
+    title: '2024',
+    content: {
+      description: 'Worked as a Frontend Developer at Codsoft and built multiple full-stack projects',
+      highlights: [
+        '💼 Frontend Developer at Codsoft',
+        '🛒 Built MERN stack e-commerce platform',
+        '📊 Developed project management systems',
+        '🎨 Created modern, responsive UIs',
+      ],
+      projects: [
+        {
+          name: 'MERN E-commerce',
+          image: '/Assets/Stylish.jpg',
+          description: 'Full-stack e-commerce with React and MongoDB',
+        },
+        {
+          name: 'Task Flow',
+          image: '/Assets/Taskflow.jpg',
+          description: 'Project management system with Framer Motion',
+        },
+        {
+          name: 'Cognify',
+          image: '/Assets/Cognify.jpg',
+          description: 'Interactive mind-map builder with React-Flow',
+        },
+        {
+          name: 'Fintech Learning',
+          image: '/Assets/Fintech.jpg',
+          description: 'Financial education platform',
+        },
+      ],
+    },
+  },
+  {
+    title: '2023',
+    content: {
+      description: 'Started my web development journey and built foundational projects',
+      highlights: [
+        '🎓 Learned core web technologies',
+        '🎮 Built interactive games and applications',
+        '📝 Created task management tools',
+        '🌐 Developed static websites',
+      ],
+      projects: [
+        {
+          name: 'Tic Tac Toe',
+          image: '/Assets/Tic-tac-toe.jpg',
+          description: 'Classic game with vanilla JavaScript',
+        },
+        {
+          name: 'Todo List',
+          image: '/Assets/Todos.jpg',
+          description: 'Task management application',
+        },
+        {
+          name: 'PHA5E',
+          image: '/Assets/Phase.jpg',
+          description: 'Portfolio-style website',
+        },
+        {
+          name: 'Capstone Project',
+          image: '/Assets/Capstone.jpg',
+          description: 'Final-year project with structured pages',
+        },
+      ],
+    },
+  },
+];

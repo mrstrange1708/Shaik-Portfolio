@@ -2,9 +2,7 @@
 import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 
-interface Badge {
-  className: string;
-}
+
 
 export default function MacbookScrollDemo() {
   return (

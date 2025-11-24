@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/all';
 import Image from 'next/image';
 import React, { useRef, useState, MouseEvent } from 'react';
 import Project from './Project';
+import TransitionLink from '@/components/TransitionLink';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -104,7 +105,7 @@ const ProjectList = () => {
     };
 
     return (
-        <section className="pb-section" id="projects">
+        <section className="pb-section mt-10" id="projects">
             <div className="container">
                 <SectionTitle title="SELECTED PROJECTS" />
 
@@ -151,13 +152,13 @@ const ProjectList = () => {
                     </div>
 
                     <div className="mt-12 pt-8 border-t border-border/30">
-                        <a
+                        <TransitionLink
                             href="/projects"
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-2 group"
                         >
                             <span>View more</span>
                             <span className="group-hover:translate-x-1 transition-transform">→</span>
-                        </a>
+                        </TransitionLink>
                     </div>
                 </div>
             </div>

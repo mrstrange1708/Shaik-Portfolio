@@ -2,6 +2,8 @@
 
 import { PROJECTS } from '@/lib/data';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import TransitionLink from '@/components/TransitionLink';
+import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Github } from 'lucide-react';
@@ -12,6 +14,15 @@ export default function ProjectsPage() {
     return (
         <div className="min-h-screen bg-background py-20">
             <div className="container mx-auto px-4">
+                <TransitionLink
+                    back
+                    href="/"
+                    className="mb-16 inline-flex gap-2 items-center group h-12"
+                >
+                    <ArrowLeft className="group-hover:-translate-x-1 group-hover:text-primary transition-all duration-300" />
+                    Back
+                </TransitionLink>
+
                 <h1 className="text-6xl md:text-8xl font-anton text-center mb-16 text-foreground">
                     ALL PROJECTS
                 </h1>
