@@ -112,9 +112,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://novel-verse-ten.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/NovelVerse',
     year: 2025,
-    thumbnail: '/Assets/Novelverse.png',
-    longThumbnail: '/Assets/Novelverse.png',
-    images: ['/Assets/Novelverse.png'],
+    thumbnail: '/projects/Novelverse.png',
+    longThumbnail: '/projects/Novelverse.png',
+    images: ['/projects/Novelverse.png', '/projects/Novelverse_1.png', '/projects/Novelverse_2.png', '/projects/Novelverse_3.png'],
     techStack: [
       'Next.js',
       "TypeScript",
@@ -159,9 +159,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://stylish-lady-collection.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/Stylish_Lady',
     year: 2025,
-    thumbnail: '/Assets/Stylish.png',
-    longThumbnail: '/Assets/Stylish.png',
-    images: ['/Assets/Stylish.png'],
+    thumbnail: '/projects/Stylish.png',
+    longThumbnail: '/projects/Stylish.png',
+    images: ['/projects/Stylish.png', '/projects/Stylish_1.png', '/projects/Stylish_2.png'],
     techStack: ['Next.js', 'TypeScript', 'Supabase', "Razorpay", 'Tailwind CSS', 'Git', "Vercel"],
     description: `
       A complete MERN stack e-commerce website built for a clothing brand. Designed with a modern UI, smooth shopping flow, and full product management. <br/><br/>
@@ -194,9 +194,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://fin.oidelta.com/',
     sourceCode: 'https://github.com/mrstrange1708/FinanceFlow',
     year: 2024,
-    thumbnail: '/Assets/Financeflow.png',
-    longThumbnail: '/Assets/Financeflow.png',
-    images: ['/Assets/Financeflow.png'],
+    thumbnail: '/projects/Financeflow.png',
+    longThumbnail: '/projects/Financeflow.png',
+    images: ['/projects/Financeflow.png', '/projects/Financeflow_1.png', '/projects/Financeflow_2.png'],
     techStack: [
       'Next.js',
       "Supabase",
@@ -237,9 +237,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://project-management-caps.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/Project-Management_Caps',
     year: 2024,
-    thumbnail: '/Assets/Taskflow.jpg',
-    longThumbnail: '/Assets/Taskflow.jpg',
-    images: ['/Assets/Taskflow.jpg'],
+    thumbnail: '/projects/Taskflow.jpg',
+    longThumbnail: '/projects/Taskflow.jpg',
+    images: ['/projects/Taskflow.jpg', '/projects/Taskflow_1.png', '/projects/Taskflow_2.png'],
     techStack: ['React.js', 'Node.js', "Express.js", "MongoDB", "Google OAuth", "JWT", 'Tailwind CSS', 'Git', 'Vercel'],
     description: `
       A project management system where users can create, assign, and track tasks with an intuitive dashboard and smooth animations. <br/><br/>
@@ -272,9 +272,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://fin-tech-learning.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/FinTech-Learning',
     year: 2024,
-    thumbnail: '/Assets/Fintech.jpg',
-    longThumbnail: '/Assets/Fintech.jpg',
-    images: ['/Assets/Fintech.jpg'],
+    thumbnail: '/projects/Fintech.jpg',
+    longThumbnail: '/projects/Fintech.jpg',
+    images: ['/projects/Fintech.jpg', '/projects/Fintech_1.png', '/projects/Fintech_2.png'],
     techStack: ['JavaScript', 'React.js', 'Tailwind CSS'],
     description: `
       A lightweight learning platform designed to introduce users to financial concepts through simple lessons and an intuitive UI. <br/><br/>
@@ -300,9 +300,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://cognify-lemon.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/Mind_Map_Builder',
     year: 2024,
-    thumbnail: '/Assets/Cognify.jpg',
-    longThumbnail: '/Assets/Cognify.jpg',
-    images: ['/Assets/Cognify.jpg'],
+    thumbnail: '/projects/Cognify.jpg',
+    longThumbnail: '/projects/Cognify.jpg',
+    images: ['/projects/Cognify.jpg'],
     techStack: ['React-flow', 'React.js', 'Framer Motion', 'Tailwind CSS', "Firebase", 'Git', 'Vercel'],
     description: `
       Cognify is an interactive mind-map builder that helps users organize thoughts visually using draggable nodes and connectors. <br/><br/>
@@ -335,9 +335,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://mrstrange1708.github.io/E-commerce/',
     sourceCode: 'https://github.com/mrstrange1708/E-commerce',
     year: 2023,
-    thumbnail: '/Assets/E-commerce.png',
-    longThumbnail: '/Assets/E-commerce.png',
-    images: ['/Assets/E-commerce.png'],
+    thumbnail: '/projects/E-commerce.png',
+    longThumbnail: '/projects/E-commerce.png',
+    images: ['/projects/E-commerce.png'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
     description: `
       A static E-commerce website built with smooth navigation and clean structure.
@@ -366,9 +366,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://tic-tac-toe-project-gamma-pink.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/Tic_Tac_Toe_Project',
     year: 2023,
-    thumbnail: '/Assets/Tic-tac-toe.jpg',
-    longThumbnail: '/Assets/Tic-tac-toe.jpg',
-    images: ['/Assets/Tic-tac-toe.jpg'],
+    thumbnail: '/projects/Tic-tac-toe.jpg',
+    longThumbnail: '/projects/Tic-tac-toe.jpg',
+    images: ['/projects/Tic-tac-toe.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
     description: `
       A classic Tic Tac Toe game built with simple game logic and smooth UI interactions. Perfect for practicing core JS fundamentals.
@@ -397,9 +397,9 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://to-do-list-jade-chi.vercel.app/',
     sourceCode: 'https://github.com/mrstrange1708/To-Do-List',
     year: 2023,
-    thumbnail: '/Assets/Todos.jpg',
-    longThumbnail: '/Assets/Todos.jpg',
-    images: ['/Assets/Todos.jpg'],
+    thumbnail: '/projects/Todos.jpg',
+    longThumbnail: '/projects/Todos.jpg',
+    images: ['/projects/Todos.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
     description: `
       A clean and minimal todo list app allowing users to add, remove, and track tasks easily.
@@ -425,9 +425,9 @@ export const PROJECTS: IProject[] = [
     slug: 'pha5e',
     liveUrl: 'https://mrstrange1708.github.io/Pha5e/',
     year: 2023,
-    thumbnail: '/Assets/Phase.jpg',
-    longThumbnail: '/Assets/Phase.jpg',
-    images: ['/Assets/Phase.jpg'],
+    thumbnail: '/projects/Phase.jpg',
+    longThumbnail: '/projects/Phase.jpg',
+    images: ['/projects/Phase.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS'],
     description: `
       A static portfolio-style website built with smooth navigation and clean structure.
@@ -454,9 +454,9 @@ export const PROJECTS: IProject[] = [
     slug: 'capstone-project',
     liveUrl: 'https://cap-stone-projects.vercel.app/',
     year: 2023,
-    thumbnail: '/Assets/Capstone.jpg',
-    longThumbnail: '/Assets/Capstone.jpg',
-    images: ['/Assets/Capstone.jpg'],
+    thumbnail: '/projects/Capstone.jpg',
+    longThumbnail: '/projects/Capstone.jpg',
+    images: ['/projects/Capstone.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS'],
     description: `
       A static final-year project featuring structured pages, responsive layout, and clear UI design.
@@ -508,17 +508,17 @@ export const TIMELINE_DATA = [
       projects: [
         {
           name: 'Novelverse',
-          image: '/Assets/Novelverse.png',
+          image: '/projects/Novelverse.png',
           description: 'Online open-library platform with Next.js and MySQL',
         },
         {
           name: 'Finance Flow',
-          image: '/Assets/Financeflow.png',
+          image: '/projects/Financeflow.png',
           description: 'Personal expense tracker with analytics',
         },
         {
           name: 'MERN E-commerce',
-          image: '/Assets/Stylish.jpg',
+          image: '/projects/Stylish.jpg',
           description: 'Full-stack e-commerce with React and MongoDB',
         },
       ],
@@ -538,17 +538,17 @@ export const TIMELINE_DATA = [
 
         {
           name: 'Task Flow',
-          image: '/Assets/Taskflow.jpg',
+          image: '/projects/Taskflow.jpg',
           description: 'Project management system with Framer Motion',
         },
         {
           name: 'Cognify',
-          image: '/Assets/Cognify.jpg',
+          image: '/projects/Cognify.jpg',
           description: 'Interactive mind-map builder with React-Flow',
         },
         {
           name: 'Fintech Learning',
-          image: '/Assets/Fintech.jpg',
+          image: '/projects/Fintech.jpg',
           description: 'Financial education platform',
         },
       ],
@@ -567,22 +567,22 @@ export const TIMELINE_DATA = [
       projects: [
         {
           name: 'Tic Tac Toe',
-          image: '/Assets/Tic-tac-toe.jpg',
+          image: '/projects/Tic-tac-toe.jpg',
           description: 'Classic game with vanilla JavaScript',
         },
         {
           name: 'Todo List',
-          image: '/Assets/Todos.jpg',
+          image: '/projects/Todos.jpg',
           description: 'Task management application',
         },
         {
           name: 'PHA5E',
-          image: '/Assets/Phase.jpg',
+          image: '/projects/Phase.jpg',
           description: 'Portfolio-style website',
         },
         {
           name: 'Capstone Project',
-          image: '/Assets/Capstone.jpg',
+          image: '/projects/Capstone.jpg',
           description: 'Final-year project with structured pages',
         },
       ],
