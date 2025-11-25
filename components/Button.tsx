@@ -59,6 +59,7 @@ const Button = ({
         light: `bg-background-active text-foreground hover:bg-background-active`,
         dark: `bg-foreground text-background hover:bg-foreground/80`,
         link: `text-foreground hover:text-primary`,
+        'white-green': `bg-white text-white`,
         'no-color': '',
     }[variant || 'primary'];
 
@@ -85,7 +86,7 @@ const Button = ({
                     href={props.href.toString() || '#'}
                 >
                     {variant !== 'link' && (
-                        <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>
+                        <span className={`absolute top-[200%] left-0 right-0 h-full rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150 ${variant === 'white-green' ? 'bg-green-500' : 'bg-white'}`}></span>
                     )}
                     <span className="z-[1]">
                         {loading ? <Child icon={icon} /> : children}
@@ -97,7 +98,7 @@ const Button = ({
         return (
             <Link className={buttonClasses} {...props} href={props.href || '#'}>
                 {variant !== 'link' && (
-                    <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>
+                    <span className={`absolute top-[200%] left-0 right-0 h-full rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150 ${variant === 'white-green' ? 'bg-green-500' : 'bg-white'}`}></span>
                 )}
                 <span className="z-[1]">
                     {loading ? <Child icon={icon} /> : children}
@@ -110,7 +111,7 @@ const Button = ({
         return (
             <button className={buttonClasses} {...props}>
                 {variant !== 'link' && (
-                    <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>
+                    <span className={`absolute top-[200%] left-0 right-0 h-full rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150 ${variant === 'white-green' ? 'bg-green-500' : 'bg-white'}`}></span>
                 )}
                 <span className="z-[1]">
                     {loading ? <Child icon={icon} /> : children}

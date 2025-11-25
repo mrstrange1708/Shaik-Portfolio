@@ -518,7 +518,7 @@ export const TIMELINE_DATA = [
         },
         {
           name: 'MERN E-commerce',
-          image: '/projects/Stylish.jpg',
+          image: '/projects/Stylish.png',
           description: 'Full-stack e-commerce with React and MongoDB',
         },
       ],

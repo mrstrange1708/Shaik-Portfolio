@@ -13,6 +13,7 @@ export type Variant =
     | 'light'
     | 'dark'
     | 'link'
+    | 'white-green'
     | 'no-color';
 
 export interface IProject {

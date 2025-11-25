@@ -54,16 +54,28 @@ const Banner = () => {
                         experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
-                    <Button
-                        as="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
-                        variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
-                    >
-                        Hire Me
-                    </Button>
+                    <div className="flex gap-4 mt-9">
+                        <Button
+                            as="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={GENERAL_INFO.upworkProfile}
+                            variant="primary"
+                            className="banner-button slide-up-and-fade"
+                        >
+                            Hire Me
+                        </Button>
+                        <Button
+                            as="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="/Assets/Resume-NewtonSchool.pdf"
+                            variant="white-green"
+                            className="banner-button slide-up-and-fade text-black"
+                        >
+                            View Resume
+                        </Button>
+                    </div>
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
