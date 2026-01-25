@@ -28,8 +28,52 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - SHAIK',
-    description: 'Personal portfolio of SHAIK - Frontend Developer',
+    title: {
+        default: 'Shaik Junaid Sami | Full Stack Developer Portfolio',
+        template: '%s | Shaik Junaid Sami',
+    },
+    description:
+        'Shaik Junaid Sami is a Full Stack Developer specializing in JavaScript, React, Next.js, and scalable web applications. Explore projects, skills, and experience.',
+    keywords: [
+        'Shaik Junaid Sami',
+        'Shaik Junaid Sami Portfolio',
+        'Full Stack Developer',
+        'Frontend Developer',
+        'React Developer',
+        'Next.js Developer',
+        'JavaScript Developer',
+        'Web Developer Portfolio',
+    ],
+    authors: [{ name: 'Shaik Junaid Sami' }],
+    creator: 'Shaik Junaid Sami',
+    publisher: 'Shaik Junaid Sami',
+    metadataBase: new URL('https://www.theshaik.tech'),
+    alternates: {
+        canonical: '/',
+    },
+    openGraph: {
+        title: 'Shaik Junaid Sami | Full Stack Developer Portfolio',
+        description:
+            'Official portfolio of Shaik Junaid Sami. Full Stack Developer with experience in React, Next.js, and scalable web systems.',
+        url: 'https://www.theshaik.tech',
+        siteName: 'Shaik Junaid Sami Portfolio',
+        images: [
+            {
+                url: '/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'Shaik Junaid Sami Portfolio',
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Shaik Junaid Sami | Full Stack Developer Portfolio',
+        description:
+            'Explore the portfolio of Shaik Junaid Sami, a Full Stack Developer building modern, scalable web applications.',
+    },
     icons: {
         icon: '/favicon.ico',
     },
