@@ -34,21 +34,9 @@ export const MY_STACK = {
       icon: '/logo/next.png',
     },
     {
-      name: 'Redux',
-      icon: '/logo/redux.png',
-    },
-    {
       name: 'Tailwind CSS',
       icon: '/logo/tailwind.png',
-    },
-    {
-      name: 'GSAP',
-      icon: '/logo/gsap.png',
-    },
-    {
-      name: 'Bootstrap',
-      icon: '/logo/bootstrap.svg',
-    },
+    }
   ],
   backend: [
     {
