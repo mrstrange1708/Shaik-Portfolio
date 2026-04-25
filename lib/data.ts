@@ -107,6 +107,56 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
   {
+    title: 'Cubrics',
+    slug: 'cubrics',
+    liveUrl: 'https://cubrics.vercel.app/',
+    sourceCode: 'https://github.com/mrstrange1708/Cubrics',
+    year: 2026,
+    thumbnail: '/projects/Cubrics.png',
+    longThumbnail: '/projects/Cubrics.png',
+    images: ['/projects/Cubrics.png', '/projects/Cubrics_1.png', '/projects/Cubrics_2.png', '/projects/Cubrics_3.png'],
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Three.js',
+      'WebSockets',
+      'Tailwind CSS',
+      'Kociemba Algorithm',
+      'Node.js',
+      'Git',
+      'Vercel',
+    ],
+    description: `
+      Cubrics is a production-ready speedcubing platform built to connect Rubik's Cube solvers through real-time interaction, competition, and a powerful 3D cube solver. The platform addresses the fragmented speedcubing community by centralizing training tools, social features, and competitive elements in a single unified experience. Designed for both casual cubers and competitive solvers, Cubrics combines algorithmic precision with seamless user interaction.<br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>Interactive 3D Rubik's Cube solver with visual move-by-move animations using Three.js and the Kociemba two-phase algorithm</li>
+        <li>Real-time chat and community features powered by WebSocket connections for low-latency communication</li>
+        <li>Cube state visualization handling 43 quintillion possible configurations with efficient client-side rendering</li>
+        <li>Competition and progress tracking to enable cubers to challenge each other and monitor improvement</li>
+        <li>Fully responsive interface optimized for desktop and mobile speedcubing sessions</li>
+      </ul><br/>
+      Technical Highlights:<br/>
+      <ul>
+        <li>Engineered a 3D Rubik's Cube solver using the Kociemba algorithm, delivering optimal solutions in under 20 moves with sub-second computation time</li>
+        <li>Implemented WebSocket-based real-time communication with connection pooling to maintain scalable, low-latency chat across concurrent users</li>
+        <li>Built complex state management system to accurately track and render cube rotations, user inputs, and solution sequences without UI lag</li>
+        <li>Designed reusable Three.js components with optimized geometry rendering to ensure smooth 60fps performance during cube animations</li>
+        <li>Structured TypeScript codebase with type-safe API contracts and modular architecture for maintainability and extensibility</li>
+      </ul>
+    `,
+    role: `
+      Full Stack Developer & Algorithm Engineer<br/>
+      <ul>
+        <li>Architected and implemented the entire full-stack application from database design to deployment on Vercel</li>
+        <li>Developed the core 3D cube solver integrating the Kociemba algorithm with Three.js for accurate visualization and optimal move generation</li>
+        <li>Built real-time social features using WebSocket architecture with proper error handling and reconnection logic</li>
+        <li>Designed and optimized frontend components in Next.js with TypeScript for type safety and developer experience</li>
+        <li>Managed CI/CD pipeline, environment configuration, and production deployment ensuring zero-downtime releases</li>
+      </ul>
+    `,
+  },
+  {
     title: 'Novelverse',
     slug: 'novelverse',
     liveUrl: 'https://novel-verse-ten.vercel.app/',
@@ -130,11 +180,11 @@ export const PROJECTS: IProject[] = [
       Novelverse is a full-stack digital library platform that allows users to explore, search, and read books online. I designed the application to make browsing large book collections smooth and intuitive, with category filters, pagination, and a responsive reading experience across all devices. The project focuses on delivering fast load times, clean UI, and a stable backend to handle different book operations. <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>📚 Extensive Book Library with category-based filtering</li>
-        <li>🔎 Search & Pagination for smooth navigation</li>
-        <li>🖥️ Fully responsive UI for desktop and mobile reading</li>
-        <li>⚡ Fast load times using Next.js SSR & ISR</li>
-        <li>🔐 Secure backend powered by Node.js, Express & MySQL</li>
+        <li>Extensive Book Library with category-based filtering</li>
+        <li>Search & Pagination for smooth navigation</li>
+        <li>Fully responsive UI for desktop and mobile reading</li>
+        <li>Fast load times using Next.js SSR & ISR</li>
+        <li>Secure backend powered by Node.js, Express & MySQL</li>
       </ul><br/>
       Technical Highlights:
       <ul>
@@ -147,9 +197,9 @@ export const PROJECTS: IProject[] = [
     role: `
       Full Stack Developer<br/>
       <ul>
-        <li>⚙️ Built backend APIs using Express.js & MySQL</li>
-        <li>🎨 Created all frontend pages in Next.js and Tailwind CSS</li>
-        <li>🚀Managed deployment, environment setup, and optimizations using Vercel and Docker</li>
+        <li>Built backend APIs using Express.js & MySQL</li>
+        <li>Created all frontend pages in Next.js and Tailwind CSS</li>
+        <li>Managed deployment, environment setup, and optimizations using Vercel and Docker</li>
       </ul>
     `,
   },
@@ -183,8 +233,8 @@ export const PROJECTS: IProject[] = [
     role: `
       Full Stack Developer<br/>
       <ul>
-        <li>🖥️ Built frontend UI in React & Tailwind</li>
-        <li>🚀 Deployed on Vercel</li>
+        <li>Built frontend UI in React & Tailwind</li>
+        <li>Deployed on Vercel</li>
       </ul>
     `,
   },
@@ -211,23 +261,23 @@ export const PROJECTS: IProject[] = [
       FinanceFlow is a personal expense tracker built to help users categorize, analyze, and control their spending. <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>💸 Income & Expense Tracking with charts</li>
-        <li>📊 Category-wise analytics for better insights</li>
-        <li>📱 Fully responsive UI for mobile screens</li>
+        <li>Income & Expense Tracking with charts</li>
+        <li>Category-wise analytics for better insights</li>
+        <li>Fully responsive UI for mobile screens</li>
       </ul><br/>
       Technical Highlights:
       <ul>
         <li>JWT Authentication and protected API routes</li>
         <li>Clean component-driven UI in Next.js</li>
         <li>Real-time data sync via Supabase</li>
-      </ul>
+      </u
     `,
     role: `
       Full Stack Developer<br/>
       <ul>
-        <li>⚙️ Developed backend APIs & Supabase queries</li>
-        <li>🎨 Designed user dashboard in Next.js</li>
-        <li>☁️ Managed deployment with Vercel</li>
+        <li>Developed backend APIs & Supabase queries</li>
+        <li>Designed user dashboard in Next.js</li>
+        <li>Managed deployment with Vercel</li>
       </ul>
     `,
   },
@@ -245,10 +295,10 @@ export const PROJECTS: IProject[] = [
       A project management system where users can create, assign, and track tasks with an intuitive dashboard and smooth animations. <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>📁 Project & Task creation system</li>
-        <li>📅 Deadline & priority management</li>
-        <li>🎞️ Framer Motion animations</li>
-        <li>📱 Fully responsive interface</li>
+        <li>Project & Task creation system</li>
+        <li>Deadline & priority management</li>
+        <li>Framer Motion animations</li>
+        <li>Fully responsive interface</li>
       </ul>
       Technical Highlights:
       <ul>
@@ -260,9 +310,9 @@ export const PROJECTS: IProject[] = [
     role: `
       Frontend Developer<br/>
       <ul>
-        <li>🎨 Built entire UI with React & Tailwind</li>
-        <li>⚡ Added animations with Framer Motion</li>
-        <li>🔗 Integrated APIs for project data</li>
+        <li>Built entire UI with React & Tailwind</li>
+        <li>Added animations with Framer Motion</li>
+        <li>Integrated APIs for project data</li>
       </ul>
     `,
   },
@@ -288,9 +338,9 @@ export const PROJECTS: IProject[] = [
     role: `
       Frontend Developer<br/>
       <ul>
-        <li>🎨 Designed and built all UI screens</li>
-        <li>⚡ Implemented responsive layout</li>
-        <li>🔗 Connected lessons dynamically</li>
+        <li>Designed and built all UI screens</li>
+        <li>Implemented responsive layout</li>
+        <li>Connected lessons dynamically</li>
       </ul>
     `,
   },
@@ -308,10 +358,10 @@ export const PROJECTS: IProject[] = [
       Cognify is an interactive mind-map builder that helps users organize thoughts visually using draggable nodes and connectors. <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>🧠 Real-time node creation & editing</li>
-        <li>🔗 Drag & connect logic using React-Flow</li>
-        <li>🎞️ Smooth animations with Framer Motion</li>
-        <li>📱 Responsive design for all devices</li>
+        <li>Real-time node creation & editing</li>
+        <li>Drag & connect logic using React-Flow</li>
+        <li>Smooth animations with Framer Motion</li>
+        <li>Responsive design for all devices</li>
       </ul>
       Technical Highlights:
       <ul>
@@ -323,9 +373,9 @@ export const PROJECTS: IProject[] = [
     role: `
       Frontend Developer<br/>
       <ul>
-        <li>🎨 Built mind-map editor using React-Flow</li>
-        <li>⚡ Added transitions & animations</li>
-        <li>📁 Integrated component-based UI</li>
+        <li>Built mind-map editor using React-Flow</li>
+        <li>Added transitions & animations</li>
+        <li>Integrated component-based UI</li>
       </ul>
     `,
   },
@@ -344,7 +394,7 @@ export const PROJECTS: IProject[] = [
       <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>📱 Responsive design for all devices</li>
+        <li>Responsive design for all devices</li>
       </ul> 
       Technical Highlights:
       <ul>
@@ -354,9 +404,9 @@ export const PROJECTS: IProject[] = [
     role: `
       Developer<br/>
       <ul>
-        <li>🎨 Designed and built all UI screens</li>
-        <li>⚡ Implemented responsive layout</li>
-        <li>🔗 Connected lessons dynamically</li>
+        <li>Designed and built all UI screens</li>
+        <li>Implemented responsive layout</li>
+        <li>Connected lessons dynamically</li>
       </ul>
     `,
   },
@@ -376,7 +426,7 @@ export const PROJECTS: IProject[] = [
       Key Features:<br/>
       <ul>
         <li>Classic Tic Tac Toe game logic</li>
-        <li>📱 Responsive design for all devices</li>
+        <li>Responsive design for all devices</li>
       </ul> 
       Technical Highlights:
       <ul>
@@ -386,8 +436,8 @@ export const PROJECTS: IProject[] = [
     role: `
       Developer<br/>
       <ul>
-        <li>🧠 Implemented full game logic</li>
-        <li>🎨 Designed responsive board UI</li>
+        <li>Implemented full game logic</li>
+        <li>Designed responsive board UI</li>
       </ul>
     `,
   },
@@ -406,7 +456,7 @@ export const PROJECTS: IProject[] = [
       <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>📱 Responsive design for all devices</li>
+        <li>Responsive design for all devices</li>
       </ul> 
       Technical Highlights:
       <ul>
@@ -416,7 +466,7 @@ export const PROJECTS: IProject[] = [
     role: `
       Developer<br/>
       <ul>
-        <li>🎨 Designed simple & responsive UI</li>
+        <li>Designed simple & responsive UI</li>
       </ul>
     `,
   },
@@ -444,8 +494,8 @@ export const PROJECTS: IProject[] = [
     role: `
       Developer<br/>
       <ul>
-        <li>🎨 Created UI from scratch</li>
-        <li>⚡ Added smooth navigation features</li>
+        <li>Created UI from scratch</li>
+        <li>Added smooth navigation features</li>
       </ul>
     `,
   },
@@ -463,7 +513,7 @@ export const PROJECTS: IProject[] = [
       <br/><br/>
       Key Features:<br/>
       <ul>
-        <li>📱 Responsive design for all devices</li>
+        <li>Responsive design for all devices</li>
       </ul> 
       Technical Highlights:
       <ul>
@@ -473,8 +523,8 @@ export const PROJECTS: IProject[] = [
     role: `
       Developer<br/>
       <ul>
-        <li>🖥️ Built all frontend pages</li>
-        <li>⚡ Ensured responsive performance</li>
+        <li>Built all frontend pages</li>
+        <li>Ensured responsive performance</li>
       </ul>
     `,
   },
@@ -496,14 +546,33 @@ export const MY_EXPERIENCE = [
 
 export const TIMELINE_DATA = [
   {
+    title: '2026',
+    content: {
+      description: 'Launched Cubrics, a production-ready speedcubing platform combining algorithmic problem-solving with real-time web technologies',
+      highlights: [
+        'Built a 3D Rubik Cube solver using the Kociemba algorithm and Three.js with sub-second optimal solutions',
+        'Engineered real-time WebSocket infrastructure for low-latency community chat and competitions',
+        'Managed complex state handling for 43 quintillion possible cube configurations with efficient rendering',
+        'Deployed and maintained a live platform serving speedcubing community with zero downtime',
+      ],
+      projects: [
+        {
+          name: 'Cubrics',
+          image: '/projects/Cubrics.png',
+          description: 'Production-ready speedcubing platform with 3D solver, real-time chat, and competitive features',
+        },
+      ],
+    },
+  },
+  {
     title: '2025',
     content: {
       description: 'Started my journey as a React Native Frontend Developer at Apodic Software Solutions LLP',
       highlights: [
-        '📱 Built mobile applications using React Native',
-        '⚛️ Implemented responsive UI components',
-        '🔧 Worked with modern frontend technologies',
-        '🚀 Contributed to production-ready applications',
+        'Built mobile applications using React Native',
+        'Implemented responsive UI components',
+        'Worked with modern frontend technologies',
+        'Contributed to production-ready applications',
       ],
       projects: [
         {
@@ -529,10 +598,10 @@ export const TIMELINE_DATA = [
     content: {
       description: 'Worked as a Frontend Developer at Codsoft and built multiple full-stack projects',
       highlights: [
-        '💼 Frontend Developer at Codsoft',
-        '🛒 Built MERN stack e-commerce platform',
-        '📊 Developed project management systems',
-        '🎨 Created modern, responsive UIs',
+        'Frontend Developer at Codsoft',
+        'Built MERN stack e-commerce platform',
+        'Developed project management systems',
+        'Created modern, responsive UIs',
       ],
       projects: [
 
@@ -559,10 +628,10 @@ export const TIMELINE_DATA = [
     content: {
       description: 'Started my web development journey and built foundational projects',
       highlights: [
-        '🎓 Learned core web technologies',
-        '🎮 Built interactive games and applications',
-        '📝 Created task management tools',
-        '🌐 Developed static websites',
+        'Learned core web technologies',
+        'Built interactive games and applications',
+        'Created task management tools',
+        'Developed static websites',
       ],
       projects: [
         {
