@@ -6,7 +6,6 @@ export const GENERAL_INFO = {
   emailSubject: "Let's collaborate on a project",
   emailBody: 'Hi SHAIK, I am reaching out to you because...',
 
-  upworkProfile: 'https://www.fiverr.com/s/2KPdko4',
 };
 
 export const SOCIAL_LINKS = [
