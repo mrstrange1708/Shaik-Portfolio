@@ -36,7 +36,25 @@ export const MY_STACK = {
     {
       name: 'Tailwind CSS',
       icon: '/logo/tailwind.png',
-    }
+    },
+    {
+      name: 'Three.js',
+      icon: '/logo/threedotjs.svg',
+    },
+  ],
+  mobile: [
+    {
+      name: 'React Native',
+      icon: '/logo/react.png',
+    },
+    {
+      name: 'Kotlin',
+      icon: '/logo/kotlin.svg',
+    },
+    {
+      name: 'SwiftUI',
+      icon: '/logo/swift.svg',
+    },
   ],
   backend: [
     {
@@ -46,6 +64,10 @@ export const MY_STACK = {
     {
       name: 'Express.js',
       icon: '/logo/express.png',
+    },
+    {
+      name: 'Fastify',
+      icon: '/logo/fastify.svg',
     },
     {
       name: "Python",
@@ -82,6 +104,18 @@ export const MY_STACK = {
       icon: '/logo/docker.svg',
     },
     {
+      name: 'AWS',
+      icon: '/logo/aws.svg',
+    },
+    {
+      name: 'Terraform',
+      icon: '/logo/terraform.svg',
+    },
+    {
+      name: 'GitHub Actions',
+      icon: '/logo/githubactions.svg',
+    },
+    {
       name: "Pandas",
       icon: "/logo/Pandas.png"
     },
@@ -94,6 +128,55 @@ export const MY_STACK = {
 };
 
 export const PROJECTS: IProject[] = [
+  {
+    title: 'FuseOS',
+    slug: 'fuseos',
+    liveUrl: 'https://fuseos.theshaik.dev/',
+    sourceCode: 'https://github.com/mrstrange1708/FuseOS',
+    year: 2026,
+    thumbnail: '/projects/FuseOS.jpg',
+    longThumbnail: '/projects/FuseOS.jpg',
+    images: ['/projects/FuseOS.jpg'],
+    techStack: [
+      'Kotlin',
+      'SwiftUI',
+      'TypeScript',
+      'Node.js',
+      'Fastify',
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Protocol Buffers',
+      'WebSockets',
+      'Jetpack Compose',
+      'GitHub Actions',
+    ],
+    description: `
+      FuseOS is a cross-device continuity platform for Android and macOS. Copy on your phone, paste on your Mac, and send files between them in a tap. It brings Apple-ecosystem-style continuity to a device pairing that has never had it natively.<br/><br/>
+      Key Features:<br/>
+      <ul>
+        <li>Real-time clipboard sync for text and images across Android and macOS</li>
+        <li>Direct peer-to-peer file transfer in both directions over the local network</li>
+        <li>Native share-sheet integration: "Send to my Mac / my phone"</li>
+        <li>Automatic device linking: sign in on both devices and they find each other, no codes to scan</li>
+      </ul><br/>
+      Technical Highlights:<br/>
+      <ul>
+        <li>Hybrid architecture: a cloud control plane (auth, device registry, signaling) is split from a local-network data plane, so clipboard and file payloads never touch the server</li>
+        <li>Cross-platform wire contract defined once in Protocol Buffers and shared by the server and both native clients</li>
+        <li>Node.js + TypeScript + Fastify signaling server over WebSockets, backed by PostgreSQL and Drizzle ORM</li>
+        <li>Native clients in Kotlin (Jetpack Compose) and SwiftUI</li>
+        <li>Turborepo monorepo with CI on GitHub Actions</li>
+      </ul>
+    `,
+    role: `
+      Solo Engineer: Architecture, Backend & Native Clients<br/>
+      <ul>
+        <li>Designed the control-plane / data-plane split and wrote the PRD, HLD and LLD</li>
+        <li>Defined the Protocol Buffers wire contract and built the signaling server</li>
+        <li>Built the Android client in Kotlin and the macOS client in SwiftUI</li>
+      </ul>
+    `,
+  },
   {
     title: 'Cubrics',
     slug: 'cubrics',
@@ -126,7 +209,7 @@ export const PROJECTS: IProject[] = [
       </ul><br/>
       Technical Highlights:<br/>
       <ul>
-        <li>Engineered a 3D Rubik's Cube solver using the Kociemba algorithm, delivering optimal solutions in under 20 moves with sub-second computation time</li>
+        <li>Engineered a 3D Rubik's Cube solver using the Kociemba algorithm, delivering optimal solutions consistently under 25 moves with sub-second computation time</li>
         <li>Implemented WebSocket-based real-time communication with connection pooling to maintain scalable, low-latency chat across concurrent users</li>
         <li>Built complex state management system to accurately track and render cube rotations, user inputs, and solution sequences without UI lag</li>
         <li>Designed reusable Three.js components with optimized geometry rendering to ensure smooth 60fps performance during cube animations</li>
@@ -202,18 +285,17 @@ export const PROJECTS: IProject[] = [
     images: ['/projects/Stylish.png', '/projects/Stylish_1.png', '/projects/Stylish_2.png'],
     techStack: ['Next.js', 'TypeScript', 'Supabase', "Razorpay", 'Tailwind CSS', 'Git', "Vercel"],
     description: `
-      A complete MERN stack e-commerce website built for a clothing brand. Designed with a modern UI, smooth shopping flow, and full product management. <br/><br/>
+      A full-stack e-commerce website built for a clothing brand with Next.js, Supabase and Razorpay. Designed with a modern UI, smooth shopping flow, and full product management. <br/><br/>
       Key Features:<br/>
       <ul>
         <li>🛒 Add to Cart, Checkout, Product Variants</li>
-        <li>📦 Real-time product updates via MongoDB</li>
+        <li>📦 Real-time product updates via Supabase</li>
         <li>🎨 Clean, modern, responsive UI with Tailwind CSS</li>
         <li>🔐 JWT Authentication and protected API routes</li>
       </ul><br/>
       Technical Highlights:
       <ul>
-        <li>Reusable component architecture in React</li>
-        <li>JWT Authentication and protected API routes</li>
+        <li>Reusable component architecture in Next.js</li>
         <li>Real-time product updates via Supabase</li>
         <li>Payment integration with Razorpay</li>
       </ul>
@@ -221,7 +303,8 @@ export const PROJECTS: IProject[] = [
     role: `
       Full Stack Developer<br/>
       <ul>
-        <li>Built frontend UI in React & Tailwind</li>
+        <li>Built frontend UI in Next.js & Tailwind</li>
+        <li>Integrated Supabase and Razorpay payments</li>
         <li>Deployed on Vercel</li>
       </ul>
     `,
@@ -258,7 +341,7 @@ export const PROJECTS: IProject[] = [
         <li>JWT Authentication and protected API routes</li>
         <li>Clean component-driven UI in Next.js</li>
         <li>Real-time data sync via Supabase</li>
-      </u
+      </ul>
     `,
     role: `
       Full Stack Developer<br/>
@@ -353,9 +436,9 @@ export const PROJECTS: IProject[] = [
       </ul>
       Technical Highlights:
       <ul>
-        <li>JWT Authentication and protected API routes</li>
+        <li>Graph editing built on React-Flow</li>
         <li>Clean component-driven UI in React</li>
-        <li>Real-time data sync via MongoDB</li>
+        <li>Data persistence via Firebase</li>
       </ul>
     `,
     role: `
@@ -394,7 +477,6 @@ export const PROJECTS: IProject[] = [
       <ul>
         <li>Designed and built all UI screens</li>
         <li>Implemented responsive layout</li>
-        <li>Connected lessons dynamically</li>
       </ul>
     `,
   },
@@ -518,11 +600,34 @@ export const PROJECTS: IProject[] = [
   },
 ];
 
-export const MY_EXPERIENCE = [
+export const MY_EXPERIENCE: {
+  title: string;
+  company: string;
+  duration: string;
+  location?: string;
+  highlights?: string[];
+}[] = [
   {
-    title: 'React Native Frontend Developer',
+    title: 'Full-Stack Engineering Intern',
+    company: 'Ryzon Digital Private Limited (Stylicaa)',
+    duration: 'June 2026 - Present',
+    location: 'Bangalore, India (Hybrid)',
+    highlights: [
+      'Design and maintain the core evaluation engine, a rule-based state machine that drives scheduling and recommendation logic across the entire platform.',
+      'Built the priority-based stylist assignment system (SLA-aware eligibility checks plus slot-strength scoring), replacing an allocation process the operations team ran by hand.',
+      'Handle cloud deployment end-to-end on Terraform-provisioned AWS infrastructure: containerization, CI/CD pipelines, and test runs before every release.',
+    ],
+  },
+  {
+    title: 'React Native Developer',
     company: 'Apodic Software Solutions LLP',
     duration: 'Sept 2025 - Nov 2025',
+    location: 'Remote',
+    highlights: [
+      'Tracked down an OAuth 2.0 redirect URI bug in Google Authentication that was breaking sessions on Android, iOS and web, bringing auth failures down to near zero.',
+      'Moved the shared REST API layer off polling onto an event-driven model with queue-based processing and rate limiting, removing redundant polling traffic entirely.',
+      'Shipped 10–12 production screens in under 4 weeks for a Spain-based client, with REST integration, error handling and i18n via Expo EAS and AWS.',
+    ],
   },
   {
     title: 'Frontend Developer',
@@ -536,14 +641,19 @@ export const TIMELINE_DATA = [
   {
     title: '2026',
     content: {
-      description: 'Launched Cubrics, a production-ready speedcubing platform combining algorithmic problem-solving with real-time web technologies',
+      description: 'Joined Stylicaa as a Full-Stack Engineering Intern, built FuseOS and launched Cubrics',
       highlights: [
+        'Full-Stack Engineering Intern at Ryzon Digital (Stylicaa), owning the evaluation engine and AWS deployments',
+        'Built FuseOS, a cross-device continuity platform for Android and macOS with peer-to-peer file transfer',
         'Built a 3D Rubik Cube solver using the Kociemba algorithm and Three.js with sub-second optimal solutions',
         'Engineered real-time WebSocket infrastructure for low-latency community chat and competitions',
-        'Managed complex state handling for 43 quintillion possible cube configurations with efficient rendering',
-        'Deployed and maintained a live platform serving speedcubing community with zero downtime',
       ],
       projects: [
+        {
+          name: 'FuseOS',
+          image: '/projects/FuseOS.jpg',
+          description: 'Android ⇄ macOS clipboard sync and peer-to-peer file transfer',
+        },
         {
           name: 'Cubrics',
           image: '/projects/Cubrics.png',
@@ -574,9 +684,9 @@ export const TIMELINE_DATA = [
           description: 'Personal expense tracker with analytics',
         },
         {
-          name: 'MERN E-commerce',
+          name: 'Stylish Lady Collection',
           image: '/projects/Stylish.png',
-          description: 'Full-stack e-commerce with React and MongoDB',
+          description: 'Full-stack e-commerce with Next.js, Supabase and Razorpay',
         },
       ],
     },
@@ -587,8 +697,7 @@ export const TIMELINE_DATA = [
       description: 'Worked as a Frontend Developer at Codsoft and built multiple full-stack projects',
       highlights: [
         'Frontend Developer at Codsoft',
-        'Built MERN stack e-commerce platform',
-        'Developed project management systems',
+        'Built a MERN stack project management platform',
         'Created modern, responsive UIs',
       ],
       projects: [

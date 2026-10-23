@@ -1,4 +1,4 @@
-import { GENERAL_INFO } from '@/lib/data';
+import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
 
 const Footer = () => {
 
@@ -13,20 +13,26 @@ const Footer = () => {
                     {GENERAL_INFO.email}
                 </a>
 
-                <div className="">
-                    <a
-                        href="https://github.com/mrstrange1708"
-                        target="_blank"
-                        className="leading-none text-muted-foreground hover:underline hover:text-white"
-                    >
-                        Design & built by Shaik Junaid sami
-                        <div className="flex items-center justify-center gap-5 pt-1">
-
-                        </div>
-                    </a>
-
-
+                <div className="flex items-center justify-center gap-6 mb-6 text-sm uppercase tracking-wider">
+                    {[
+                        ...SOCIAL_LINKS,
+                        { name: 'resume', url: '/Assets/Shaik_Junaid_Resume.pdf' },
+                    ].map((link) => (
+                        <a
+                            key={link.name}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                            {link.name}
+                        </a>
+                    ))}
                 </div>
+
+                <p className="leading-none text-muted-foreground">
+                    Designed & built by Shaik Junaid Sami
+                </p>
             </div>
         </footer>
     );

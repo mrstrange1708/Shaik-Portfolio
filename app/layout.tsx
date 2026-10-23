@@ -34,11 +34,14 @@ export const metadata: Metadata = {
         template: '%s | Shaik Junaid Sami',
     },
     description:
-        'Shaik Junaid Sami is a Full Stack Developer specializing in JavaScript, React, Next.js, and scalable web applications. Explore projects, skills, and experience.',
+        'Shaik Junaid Sami is a Full-Stack & Systems Engineer working across web, mobile, and backend with TypeScript, React, Node.js, Kotlin and Swift. Explore projects, skills, and experience.',
     keywords: [
         'Shaik Junaid Sami',
         'Shaik Junaid Sami Portfolio',
         'Full Stack Developer',
+        'Full Stack Engineer',
+        'Systems Engineer',
+        'React Native Developer',
         'Frontend Developer',
         'React Developer',
         'Next.js Developer',

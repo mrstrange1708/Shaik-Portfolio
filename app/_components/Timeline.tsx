@@ -2,7 +2,6 @@
 
 import React from "react";
 import { TimelineDemo } from "@/components/ui/timeline";
-import ParticleBackground from "@/components/ParticleBackground";
 import { TIMELINE_DATA } from "@/lib/data";
 import Image from "next/image";
 
@@ -57,7 +56,6 @@ export default function Timeline() {
 
     return (
         <div className="relative z-0" id="timeline">
-            <ParticleBackground />
             <TimelineDemo data={data} />
         </div>
     );

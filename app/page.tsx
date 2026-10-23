@@ -8,7 +8,7 @@ import Timeline from './_components/Timeline';
 
 export default function Home() {
     return (
-        <div className="page-">
+        <div >
             <Banner />
             <AboutMe />
             <MacbookScroll />

@@ -67,7 +67,21 @@ const Experiences = () => {
                             </p>
                             <p className="text-lg text-muted-foreground">
                                 {item.duration}
+                                {item.location && ` · ${item.location}`}
                             </p>
+                            {item.highlights && (
+                                <ul className="mt-5 max-w-3xl space-y-2.5">
+                                    {item.highlights.map((point) => (
+                                        <li
+                                            key={point}
+                                            className="flex gap-3 text-muted-foreground leading-relaxed"
+                                        >
+                                            <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-primary"></span>
+                                            {point}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                 </div>

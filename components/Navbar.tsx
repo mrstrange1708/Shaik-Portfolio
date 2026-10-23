@@ -7,6 +7,8 @@ import gsap from 'gsap';
 
 gsap.registerPlugin(useGSAP);
 
+const NAV_ITEMS = ['About', 'Skills', 'Experience', 'Projects', 'Timeline', 'Contact'];
+
 export default function ClientHeader() {
     const [menuOpen, setMenuOpen] = useState(false);
     const headerRef = useRef<HTMLElement>(null);
@@ -31,7 +33,7 @@ export default function ClientHeader() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
-                    {['About', 'Skills', 'Experience', 'Projects', 'Timeline', 'Contact'].map((item) => (
+                    {NAV_ITEMS.map((item) => (
                         <a
                             key={item}
                             href={`#${item.toLowerCase()}`}
@@ -60,7 +62,7 @@ export default function ClientHeader() {
 
             {menuOpen && (
                 <nav className="fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl flex flex-col gap-4 backdrop-blur-md bg-black/80 border border-white/10 rounded-2xl p-6 md:hidden text-center z-[998]">
-                    {['About', 'Projects', 'Skills', 'Timeline', 'Contact'].map((item) => (
+                    {NAV_ITEMS.map((item) => (
                         <a
                             key={item}
                             href={`#${item.toLowerCase()}`}

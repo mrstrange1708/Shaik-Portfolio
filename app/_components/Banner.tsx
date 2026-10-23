@@ -41,18 +41,30 @@ const Banner = () => {
                 ref={containerRef}
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
+                    <a
+                        href="https://www.stylicaa.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="slide-up-and-fade mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-muted-foreground backdrop-blur-sm hover:text-foreground transition-colors"
+                    >
+                        <span className="relative flex size-2">
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+                            <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
+                        </span>
+                        Currently Full-Stack Intern @ Stylicaa
+                    </a>
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">Full Stack</span>
-                        <br /> <span className="ml-4">DEVELOPER</span>
+                        <br /> <span className="ml-4">ENGINEER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}
                         <span className="font-medium text-foreground">
                             Shaik
                         </span>
-                        . A creative Full Stack Developer with 2+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                        . A Full-Stack & Systems Engineer working across web,
+                        mobile, and backend, owning problems end to end from
+                        API and schema design through cloud deployment.
                     </p>
                     <div className="flex gap-4 mt-9">
                         <Button
@@ -69,7 +81,7 @@ const Banner = () => {
                             as="link"
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="/Assets/Resume-NewtonSchool.pdf"
+                            href="/Assets/Shaik_Junaid_Resume.pdf"
                             variant="white-green"
                             className="banner-button slide-up-and-fade text-black"
                         >
@@ -97,9 +109,11 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            700+
                         </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                        <p className="text-muted-foreground">
+                            Problems Solved
+                        </p>
                     </div>
                 </div>
             </div>

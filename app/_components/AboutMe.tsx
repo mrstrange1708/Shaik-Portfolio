@@ -92,10 +92,11 @@ const AboutMe = () => {
                                 About Me
                             </h3>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                I&apos;m a Full Stack Web Developer dedicated to turning ideas into
-                                practical, high-impact digital experiences. I build with clarity,
-                                intention, and a strong sense of responsibility—crafting solutions
-                                that work smoothly in the real world, not just on paper.
+                                I&apos;m a Full-Stack & Systems Engineer and a B.Tech AI
+                                student at Newton School of Technology. I work across web,
+                                mobile, and backend with TypeScript, React, Node.js, Kotlin
+                                and Swift, from rule engines and cloud infrastructure to
+                                native apps that talk peer-to-peer.
                             </p>
                         </div>
 
@@ -124,6 +125,27 @@ const AboutMe = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 mt-16">
+                    {[
+                        { value: '1600+', label: 'LeetCode Rating' },
+                        { value: '950+', label: 'Codeforces Rating' },
+                        { value: '700+', label: 'Problems Solved' },
+                        { value: '8.15', label: 'GPA / 10' },
+                    ].map((stat) => (
+                        <div
+                            key={stat.label}
+                            className="slide-up-and-fade p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
+                        >
+                            <p className="text-3xl md:text-4xl font-anton text-primary">
+                                {stat.value}
+                            </p>
+                            <p className="mt-2 text-sm text-muted-foreground">
+                                {stat.label}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
