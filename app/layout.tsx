@@ -11,7 +11,7 @@ import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
-import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 
 const antonFont = Anton({
@@ -82,22 +82,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head>
-                {/* Google Analytics */}
-                <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-YZYZ7NPJ3C"
-                    strategy="afterInteractive"
-                />
-                <Script id="google-analytics" strategy="afterInteractive">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-YZYZ7NPJ3C');
-                    `}
-                </Script>
-            </head>
-
             <body
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
             >
@@ -119,6 +103,7 @@ export default function RootLayout({
                     <StickyEmail />
                 </ReactLenis>
             </body>
+            <GoogleAnalytics gaId="G-YZYZ7NPJ3C" />
         </html>
     );
 }

@@ -97,7 +97,7 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
             {selectedProject === null && (
                 <Image
                     src={project.thumbnail}
-                    alt="Project"
+                    alt={project.title}
                     width="300"
                     height="200"
                     className={cn(
