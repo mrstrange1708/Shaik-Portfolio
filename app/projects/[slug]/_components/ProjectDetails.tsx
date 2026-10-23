@@ -158,6 +158,15 @@ const ProjectDetails = ({ project }: Props) => {
                                     {parse(project.description)}
                                 </div>
                             </div>
+                            {project.architecture && (
+                                <div className="fade-in-later">
+                                    <p className="text-muted-foreground font-anton mb-3">
+                                        How It&apos;s Built
+                                    </p>
+
+                                    {parse(project.architecture)}
+                                </div>
+                            )}
                             {project.role && (
                                 <div className="fade-in-later">
                                     <p className="text-muted-foreground font-anton mb-3">
@@ -174,6 +183,18 @@ const ProjectDetails = ({ project }: Props) => {
                         <ArrowAnimation />
                     </div>
                 </div>
+
+                {project.video && (
+                    <video
+                        src={project.video}
+                        poster={project.thumbnail}
+                        className="fade-in-later w-full max-w-[800px] mx-auto mb-2"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    />
+                )}
 
                 <div
                     className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"

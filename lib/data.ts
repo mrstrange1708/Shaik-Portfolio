@@ -135,8 +135,19 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/FuseOS',
     year: 2026,
     thumbnail: '/projects/FuseOS.jpg',
+    previewImage: '/projects/preview/fuseos.jpg',
     longThumbnail: '/projects/FuseOS.jpg',
     images: ['/projects/FuseOS.jpg'],
+    video: '/projects/FuseOS.mp4',
+    architecture: `
+      <div class="grid grid-cols-3 gap-3 text-center text-sm">
+        <div class="rounded-lg border border-white/10 bg-white/5 p-4"><p class="font-anton text-lg">Android</p><p class="text-muted-foreground">Kotlin · Compose</p></div>
+        <div class="rounded-lg border border-primary/40 bg-primary/10 p-4"><p class="font-anton text-lg text-primary">Control plane</p><p class="text-muted-foreground">Fastify · PostgreSQL<br/>auth · devices · signaling</p></div>
+        <div class="rounded-lg border border-white/10 bg-white/5 p-4"><p class="font-anton text-lg">macOS</p><p class="text-muted-foreground">SwiftUI</p></div>
+        <div class="col-span-3 rounded-lg border border-dashed border-primary/60 p-3 text-muted-foreground">⇄ Direct LAN data plane: clipboard &amp; files go device-to-device, never through the server</div>
+      </div>
+      <p class="mt-3 text-sm text-muted-foreground">Both clients and the server share one Protocol Buffers wire contract over WebSockets.</p>
+    `,
     techStack: [
       'Kotlin',
       'SwiftUI',
@@ -184,8 +195,17 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/Cubrics',
     year: 2026,
     thumbnail: '/projects/Cubrics.png',
+    previewImage: '/projects/preview/cubrics.jpg',
     longThumbnail: '/projects/Cubrics.png',
     images: ['/projects/Cubrics.png', '/projects/Cubrics_1.png', '/projects/Cubrics_2.png', '/projects/Cubrics_3.png'],
+    architecture: `
+      <div class="grid grid-cols-3 gap-3 text-center text-sm">
+        <div class="rounded-lg border border-white/10 bg-white/5 p-4"><p class="font-anton text-lg">Cube UI</p><p class="text-muted-foreground">Next.js · Three.js<br/>cube state &amp; animation</p></div>
+        <div class="rounded-lg border border-primary/40 bg-primary/10 p-4"><p class="font-anton text-lg text-primary">Solver</p><p class="text-muted-foreground">Kociemba two-phase<br/>&lt; 25 moves</p></div>
+        <div class="rounded-lg border border-white/10 bg-white/5 p-4"><p class="font-anton text-lg">Realtime</p><p class="text-muted-foreground">WebSockets<br/>chat · competitions</p></div>
+      </div>
+      <p class="mt-3 text-sm text-muted-foreground">Scrambled state → solver → move sequence replayed move-by-move on the 3D cube; social features run over a persistent WebSocket connection.</p>
+    `,
     techStack: [
       'Next.js',
       'TypeScript',
@@ -234,6 +254,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/NovelVerse',
     year: 2025,
     thumbnail: '/projects/Novelverse.png',
+    previewImage: '/projects/preview/novelverse.jpg',
     longThumbnail: '/projects/Novelverse.png',
     images: ['/projects/Novelverse.png', '/projects/Novelverse_1.png', '/projects/Novelverse_2.png', '/projects/Novelverse_3.png'],
     techStack: [
@@ -281,6 +302,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/Stylish_Lady',
     year: 2025,
     thumbnail: '/projects/Stylish.png',
+    previewImage: '/projects/preview/stylish-lady-collection.jpg',
     longThumbnail: '/projects/Stylish.png',
     images: ['/projects/Stylish.png', '/projects/Stylish_1.png', '/projects/Stylish_2.png'],
     techStack: ['Next.js', 'TypeScript', 'Supabase', "Razorpay", 'Tailwind CSS', 'Git', "Vercel"],
@@ -316,6 +338,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/FinanceFlow',
     year: 2024,
     thumbnail: '/projects/Financeflow.png',
+    previewImage: '/projects/preview/finance-flow.jpg',
     longThumbnail: '/projects/Financeflow.png',
     images: ['/projects/Financeflow.png', '/projects/Financeflow_1.png', '/projects/Financeflow_2.png'],
     techStack: [
@@ -359,6 +382,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/Project-Management_Caps',
     year: 2024,
     thumbnail: '/projects/Taskflow.jpg',
+    previewImage: '/projects/preview/task-flow.jpg',
     longThumbnail: '/projects/Taskflow.jpg',
     images: ['/projects/Taskflow.jpg', '/projects/Taskflow_1.png', '/projects/Taskflow_2.png'],
     techStack: ['React.js', 'Node.js', "Express.js", "MongoDB", "Google OAuth", "JWT", 'Tailwind CSS', 'Git', 'Vercel'],
@@ -394,6 +418,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/FinTech-Learning',
     year: 2024,
     thumbnail: '/projects/Fintech.jpg',
+    previewImage: '/projects/preview/fintech-learning.jpg',
     longThumbnail: '/projects/Fintech.jpg',
     images: ['/projects/Fintech.jpg', '/projects/Fintech_1.png', '/projects/Fintech_2.png'],
     techStack: ['JavaScript', 'React.js', 'Tailwind CSS'],
@@ -422,6 +447,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/Mind_Map_Builder',
     year: 2024,
     thumbnail: '/projects/Cognify.jpg',
+    previewImage: '/projects/preview/cognify.jpg',
     longThumbnail: '/projects/Cognify.jpg',
     images: ['/projects/Cognify.jpg'],
     techStack: ['React-flow', 'React.js', 'Framer Motion', 'Tailwind CSS', "Firebase", 'Git', 'Vercel'],
@@ -457,6 +483,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/E-commerce',
     year: 2023,
     thumbnail: '/projects/E-commerce.png',
+    previewImage: '/projects/preview/ecommerce.jpg',
     longThumbnail: '/projects/E-commerce.png',
     images: ['/projects/E-commerce.png'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
@@ -487,6 +514,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/Tic_Tac_Toe_Project',
     year: 2023,
     thumbnail: '/projects/Tic-tac-toe.jpg',
+    previewImage: '/projects/preview/tic-tac-toe.jpg',
     longThumbnail: '/projects/Tic-tac-toe.jpg',
     images: ['/projects/Tic-tac-toe.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
@@ -518,6 +546,7 @@ export const PROJECTS: IProject[] = [
     sourceCode: 'https://github.com/mrstrange1708/To-Do-List',
     year: 2023,
     thumbnail: '/projects/Todos.jpg',
+    previewImage: '/projects/preview/todo-list.jpg',
     longThumbnail: '/projects/Todos.jpg',
     images: ['/projects/Todos.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS', 'Git', 'Vercel'],
@@ -546,6 +575,7 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://mrstrange1708.github.io/Pha5e/',
     year: 2023,
     thumbnail: '/projects/Phase.jpg',
+    previewImage: '/projects/preview/pha5e.jpg',
     longThumbnail: '/projects/Phase.jpg',
     images: ['/projects/Phase.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS'],
@@ -575,6 +605,7 @@ export const PROJECTS: IProject[] = [
     liveUrl: 'https://cap-stone-projects.vercel.app/',
     year: 2023,
     thumbnail: '/projects/Capstone.jpg',
+    previewImage: '/projects/preview/capstone-project.jpg',
     longThumbnail: '/projects/Capstone.jpg',
     images: ['/projects/Capstone.jpg'],
     techStack: ['JavaScript', 'HTML', 'CSS'],

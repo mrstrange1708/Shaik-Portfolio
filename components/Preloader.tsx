@@ -10,6 +10,11 @@ const Preloader = () => {
 
     useGSAP(
         () => {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                gsap.set(preloaderRef.current, { autoAlpha: 0 });
+                return;
+            }
+
             const tl = gsap.timeline({
                 defaults: {
                     ease: 'power1.inOut',
@@ -23,7 +28,7 @@ const Preloader = () => {
             });
 
             tl.to('.preloader-item', {
-                delay: 1,
+                delay: 0.3,
                 y: '100%',
                 duration: 0.5,
                 stagger: 0.1,

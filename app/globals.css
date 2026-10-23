@@ -44,7 +44,12 @@ html {
         display: none;
     }
     * {
-        @apply border-border !cursor-none;
+        @apply border-border;
+    }
+    @media (pointer: fine) and (min-width: 768px) {
+        * {
+            @apply !cursor-none;
+        }
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;

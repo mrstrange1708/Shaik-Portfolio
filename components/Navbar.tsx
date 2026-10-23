@@ -17,7 +17,7 @@ export default function ClientHeader() {
         gsap.set(headerRef.current, { autoAlpha: 0 });
         gsap.to(headerRef.current, {
             autoAlpha: 1,
-            delay: 2.5,
+            delay: 1.5,
             duration: 0.5,
         });
     });

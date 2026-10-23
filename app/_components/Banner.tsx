@@ -69,9 +69,7 @@ const Banner = () => {
                     <div className="flex gap-4 mt-9">
                         <Button
                             as="link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={GENERAL_INFO.upworkProfile}
+                            href={`mailto:${GENERAL_INFO.email}?subject=${encodeURIComponent(GENERAL_INFO.emailSubject)}`}
                             variant="primary"
                             className="banner-button slide-up-and-fade"
                         >
